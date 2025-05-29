@@ -6,6 +6,15 @@ contract Voting
 {
     address public chairperson;//address of chairperson (the deployer)
 
+    //the deployer is set as the chairman
+    constructor()
+    {
+        chairperson = msg.sender;
+         vstart = block.timestamp;
+        vend = block.timestamp + 604800;
+    //set the voting period as [current timestamp, current timestamp + 1 week(604800) )
+    }
+
     modifier onlyChairperson
     {
         require(msg.sender == chairperson, "Only chairperson can call this function");
@@ -90,26 +99,11 @@ contract Voting
     event voter_has_been_registered(address voter);
     event vote_has_been_cast(address voter, uint proposalId);
 
-//the deployer is set as the chairman
-    constructor()
-    {
-        chairperson = msg.sender;
-         vstart = block.timestamp;
-        vend = block.timestamp + 604800;
-//set the voting period as [current timestamp, current timestamp + 1 week(604800) )
-    }
+
 
 }
 /*
 NAMISH SHANKAR SRIVASTAVA
 CSE(B.Tech.)
 24075101
-
-Resources referred:
-1.Resources given in the assignment material itself
-2.For general information about solidity: https://solidity-by-example.org/
-3.For syntax: https://youtu.be/RQzuQb0dfBM?feature=shared and some use of AI
-4.For information about ethereum and other terms(and application): https://youtu.be/mfSr-c9sAjI?feature=shared
 */
-
-
