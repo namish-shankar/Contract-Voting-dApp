@@ -61,9 +61,9 @@ The contract deployer becomes the chairperson. Only he/she is allowed to :
 
 
 
-#### 5. Retrieve the Winner
-- Anyone can call-> `getWinner()`
-- Returns the proposal with the most votes.
+#### 5. Get the Winner
+- Call `getWinner()`(anyone can call this function)
+- Returns the proposal with maximum votes.
 
 
 
