@@ -4,7 +4,7 @@ This is a simple voting system written in Solidity.This voting system is time-bo
 
 ---
 
-## Features
+## Features provided:
 
 - Chairperson can register voters, proposals, and set voting timespan.
 - Unauthorized access and double voting is not allowed.
@@ -68,7 +68,7 @@ The contract deployer becomes the chairperson. Only he/she is allowed to :
 
 
 ---
-### Voter
+### Voter structure
 
 The following struct is used to keep track of each voter:
 
@@ -84,9 +84,9 @@ struct Voter {
 
 
 1. Resources given in the assignment material itself. 
-2. For general information about solidity: https://solidity-by-example.org/ .
-3. For syntax: https://youtu.be/RQzuQb0dfBM?feature=shared and some use of AI.
-4. For information about ethereum and other terms(and application): https://youtu.be/mfSr-c9sAjI?feature=shared .
+2. For general information about Solidity: https://solidity-by-example.org/ .
+3. For Solidity syntax: https://youtu.be/RQzuQb0dfBM?feature=shared and some use of AI.
+4. For information about Ethereum and other terms(and application): https://youtu.be/mfSr-c9sAjI?feature=shared .
 
 ---
 ### -Namish Shankar Srivastava
