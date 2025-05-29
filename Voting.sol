@@ -78,7 +78,7 @@ contract Voting
     }
 
     //to find the winner with their vote count
-    function getWinner() public view returns(string memory finalwinner, uint winner_vote_count)
+    function getWinner() public view returns(string memory final_winner, uint winner_vote_count)
     {
         uint winning_vote_count = 0;
         uint winner_index = 0;
@@ -91,11 +91,11 @@ contract Voting
             }
         }
         //for loop used to find the candidate with maximum votes
-        finalwinner = proposals[winner_index].name;
+        final_winner = proposals[winner_index].name;
         winner_vote_count = winning_vote_count;
     }
 
-    // Events
+    //events
     event voter_has_been_registered(address voter);
     event vote_has_been_cast(address voter, uint proposalId);
 
