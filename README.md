@@ -30,24 +30,24 @@ The contract deployer becomes the chairperson. Only he/she is allowed to :
 
 ---
 ### Workflow chart with different functions used and their purpose:
-#### 1. Contract Deployment
+#### 1. Contract deployment
 - The deployer becomes the **chairperson**.
 - Defines when voting can start and end (based on `block.timestamp`).
 - This is handled via the contract constructor.
 
 
-#### 2. Chairperson Registers Voters
+#### 2. Chairperson registers voters
 - Chairperson calls-> `registerVoter(address voter)`
 - Adds voters who are allowed to participate.
 
 
 
-#### 3. Chairperson Adds Proposals
+#### 3. Chairperson adds proposals
 - Chairperson calls-> `addProposal(string memory _name)`
 - Each proposal is stored with a unique ID and initialized vote count.
 
 
-#### 4. Voters Cast Their Vote
+#### 4. Voters cast their vote
 - Registered voters call-> `vote(uint proposalId)`
 
    ##### ~Conditions:
@@ -55,13 +55,13 @@ The contract deployer becomes the chairperson. Only he/she is allowed to :
 - Must not have voted already
 - Must vote within the specified time period
 
-   ##### ~Updates on Vote:
+   ##### ~Updates on vote:
 - Marks voter as voted.
 - Increments selected proposal’s vote count.
 
 
 
-#### 5. Get the Winner
+#### 5. Get the winner
 - Call `getWinner()`(anyone can call this function)
 - Returns the proposal with maximum votes.
 
@@ -79,6 +79,11 @@ struct Voter {
     uint voted_PID;//this is the proposal ID the voter has opted
 }
 ```
+---
+## Demonstration Video:
+
+https://drive.google.com/file/d/14gOKpqeUa177JTp6nU6hqiceyiO0QFBq/view
+
 ---
 ## Resources:
 
