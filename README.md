@@ -82,7 +82,7 @@ struct Voter {
 ---
 ## Demonstration Video:
 
-https://drive.google.com/file/d/14gOKpqeUa177JTp6nU6hqiceyiO0QFBq/view
+https://drive.google.com/file/d/14gOKpqeUa177JTp6nU6hqiceyiO0QFBq/view?usp=sharing
 
 ---
 ## Resources:
